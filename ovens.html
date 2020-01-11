@@ -19,6 +19,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/business-casual.min.css" rel="stylesheet">
+  <link href="css/ownStyles.css" rel="stylesheet">
 
 </head>
 
@@ -43,8 +44,14 @@
               <span class="sr-only">(current)</span>
             </a>
           </li>
-          <li class="nav-item active px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="ovens.html">Öfen</a>
+          <li class="nav-item active px-lg-4 dropdown">
+            <a class="nav-link text-uppercase text-expanded dropdown-toggle" data-toggle="dropdown" href="ovens.html">Öfen<span class="caret"></span></a>
+            <ul  class="dropdown-menu ovenDropdown">
+              <li ><a class="ovenDropdownElement" color: white; href="ovens.html">KACHELÖFEN</a></li>
+              <li><a class="ovenDropdownElement" href="oventype.html">GUSSÖFEN</aclass="ovenDropdownElement"></li>
+              <li><a class="ovenDropdownElement" href="oventype.html">CHEMINEES</a></li>
+              <li><a class="ovenDropdownElement" href="oventype.html">HERDE</a></li>
+            </ul>
           </li>
           <li class="nav-item px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="crafts.html">Handwerk</a>
