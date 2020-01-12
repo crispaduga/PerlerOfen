@@ -88,22 +88,26 @@
                   <input type="text" class="form-control" id="myFirstName" placeholder="dein Vorname..."
                     name="firstname">
                 </div>
+                <p id="urFirstname"></p>
                 <div class="form-group">
                   <label for="text">Nachname</label>
                   <input type="text" class="form-control" id="myName" placeholder="dein Nachname..." name="name">
                 </div>
+                <p></p>
                 <div class="form-group">
                   <label for="text">Betreff</label>
                   <input type="text" class="form-control" id="mySubject" placeholder="dein Betreff..." name="subject">
                 </div>
+                <p></p>
                 <div class="form-group">
                   <label for="text">Mitteilung</label>
                   <input type="text" class="form-control" id="myMessage" placeholder="deine Mitteilung..."
                     name="message" style="height: 200px;">
                 </div>
+                <p></p>
 
 
-                <button id="mySubmit" type="submit" class="btn btn-primary">Submit</button>
+                <button onclick="sendMsg()" id="mySubmit" type="submit" class="btn btn-primary">Submit</button>
               </form>
             </div>
           </div>
@@ -121,7 +125,7 @@
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>  
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 
 </body>
@@ -130,5 +134,16 @@
 <script>
   $('.list-hours li').eq(new Date().getDay()).addClass('today');
 </script>
+<script>
+  function sendMsg() {
+    var firstN = document.getElementById('myFirstName').value;
+    var fullN = document.getElementById('myName').value;
+    var subj = document.getElementById('mySubject').value;
+    var msg = document.getElementById('myMessage').value;
+    window.alert(firstN+", " +fullN+", " + subj+", " + msg);
+  }
+</script>
+
+
 
 </html>
