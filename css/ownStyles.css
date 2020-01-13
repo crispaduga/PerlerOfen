@@ -1,12 +1,14 @@
 .ovenDropdown {
     background-color: #9D312D;
+    border: none;  
     
 
 }
 
 .ovenDropdownElement {
     font-family: Arial, Helvetica, sans-serif;
-    color: white;   
+    color: white;
+     
 
 }
 
